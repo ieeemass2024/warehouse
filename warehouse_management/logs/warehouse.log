@@ -1,0 +1,271 @@
+2024-04-29 00:53:17 [main] INFO  c.e.warehouse.WarehouseApplication - Starting WarehouseApplication using Java 17 with PID 34824 (C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\warehouse)
+2024-04-29 00:53:17 [main] INFO  c.e.warehouse.WarehouseApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 00:53:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 00:53:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 00:53:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2024-04-29 00:53:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-29 00:53:20 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-04-29 00:53:20 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-04-29 00:53:20 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-04-29 00:53:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-29 00:53:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29 00:53:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-29 00:53:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2540 ms
+2024-04-29 00:53:20 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b864b231-087a-4c03-a07c-665c83374579
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 00:53:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c89b864, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3400d6fa, org.springframework.security.web.context.SecurityContextHolderFilter@22a63740, org.springframework.security.web.header.HeaderWriterFilter@26d24d7a, org.springframework.web.filter.CorsFilter@30a62a5b, org.springframework.security.web.authentication.logout.LogoutFilter@16d61071, com.example.warehouse.filter.JwtAuthorizeFilter@4ae280da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ec92631, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76220ef1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41a8f0d8, org.springframework.security.web.session.SessionManagementFilter@3c97f5e9, org.springframework.security.web.access.ExceptionTranslationFilter@a63643e, org.springframework.security.web.access.intercept.AuthorizationFilter@3a8640f7]
+2024-04-29 00:53:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-29 00:53:23 [main] INFO  c.e.warehouse.WarehouseApplication - Started WarehouseApplication in 6.727 seconds (process running for 7.2)
+2024-04-29 00:53:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 00:53:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-29 00:53:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-04-29 00:53:56 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 00:53:56 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f94b64
+2024-04-29 00:53:56 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 00:53:56 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 00:53:56 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 00:53:56 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 00:53:57 [http-nio-8080-exec-2] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 00:54:25 [main] INFO  c.e.warehouse.WarehouseApplication - Starting WarehouseApplication using Java 17 with PID 9544 (C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\warehouse)
+2024-04-29 00:54:25 [main] INFO  c.e.warehouse.WarehouseApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 00:54:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 00:54:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 00:54:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-04-29 00:54:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-29 00:54:27 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-04-29 00:54:27 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-04-29 00:54:27 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-04-29 00:54:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-29 00:54:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29 00:54:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-29 00:54:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2452 ms
+2024-04-29 00:54:28 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ced61795-a8e2-4e8a-86de-8744c4cef407
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 00:54:30 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18692e80, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@779b4f9c, org.springframework.security.web.context.SecurityContextHolderFilter@5a78b52b, org.springframework.security.web.header.HeaderWriterFilter@3e28af44, org.springframework.web.filter.CorsFilter@31fe0ce5, org.springframework.security.web.authentication.logout.LogoutFilter@2419fe6f, com.example.warehouse.filter.JwtAuthorizeFilter@65036e8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42ffbab6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7672960e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178dc733, org.springframework.security.web.session.SessionManagementFilter@a63643e, org.springframework.security.web.access.ExceptionTranslationFilter@4cc89246, org.springframework.security.web.access.intercept.AuthorizationFilter@5be69f7e]
+2024-04-29 00:54:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-29 00:54:31 [main] INFO  c.e.warehouse.WarehouseApplication - Started WarehouseApplication in 6.631 seconds (process running for 7.075)
+2024-04-29 00:56:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 00:56:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-29 00:56:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-04-29 00:56:46 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 00:56:46 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c5fef64
+2024-04-29 00:56:46 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 00:56:46 [http-nio-8080-exec-2] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 00:56:46 [http-nio-8080-exec-2] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 00:56:46 [http-nio-8080-exec-2] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 00:56:47 [http-nio-8080-exec-3] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 00:57:01 [http-nio-8080-exec-4] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 00:57:01 [http-nio-8080-exec-4] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user1(String)
+2024-04-29 00:57:01 [http-nio-8080-exec-4] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 00:57:01 [http-nio-8080-exec-5] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 00:57:18 [http-nio-8080-exec-6] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 00:57:20 [http-nio-8080-exec-7] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 00:57:26 [http-nio-8080-exec-8] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 00:57:26 [http-nio-8080-exec-8] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 00:57:26 [http-nio-8080-exec-8] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 00:57:29 [http-nio-8080-exec-9] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 00:57:29 [http-nio-8080-exec-9] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 00:57:29 [http-nio-8080-exec-9] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 00:57:29 [http-nio-8080-exec-10] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 00:57:32 [http-nio-8080-exec-1] DEBUG c.e.w.m.ItemMapper.deleteItemById - ==>  Preparing: DELETE FROM Items WHERE id = ?
+2024-04-29 00:57:32 [http-nio-8080-exec-1] DEBUG c.e.w.m.ItemMapper.deleteItemById - ==> Parameters: 18(Integer)
+2024-04-29 00:57:32 [http-nio-8080-exec-1] DEBUG c.e.w.m.ItemMapper.deleteItemById - <==    Updates: 1
+2024-04-29 00:57:32 [http-nio-8080-exec-1] INFO  c.e.w.controller.ItemController - Deleting item for ID: 18 from caching
+2024-04-29 00:57:33 [http-nio-8080-exec-2] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==>  Preparing: SELECT * FROM Items
+2024-04-29 00:57:33 [http-nio-8080-exec-2] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==> Parameters: 
+2024-04-29 00:57:33 [http-nio-8080-exec-2] DEBUG c.e.w.mapper.ItemMapper.findAllItems - <==      Total: 14
+2024-04-29 00:57:33 [http-nio-8080-exec-2] INFO  c.e.w.controller.ItemController - All items retrieved from database and cached.
+2024-04-29 00:57:36 [http-nio-8080-exec-3] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 00:57:39 [http-nio-8080-exec-4] DEBUG c.e.w.m.ItemMapper.deleteItemById - ==>  Preparing: DELETE FROM Items WHERE id = ?
+2024-04-29 00:57:39 [http-nio-8080-exec-4] DEBUG c.e.w.m.ItemMapper.deleteItemById - ==> Parameters: 9(Integer)
+2024-04-29 00:57:39 [http-nio-8080-exec-4] DEBUG c.e.w.m.ItemMapper.deleteItemById - <==    Updates: 1
+2024-04-29 00:57:39 [http-nio-8080-exec-4] INFO  c.e.w.controller.ItemController - Deleting item for ID: 9 from caching
+2024-04-29 00:57:40 [http-nio-8080-exec-5] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==>  Preparing: SELECT * FROM Items
+2024-04-29 00:57:40 [http-nio-8080-exec-5] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==> Parameters: 
+2024-04-29 00:57:40 [http-nio-8080-exec-5] DEBUG c.e.w.mapper.ItemMapper.findAllItems - <==      Total: 13
+2024-04-29 00:57:40 [http-nio-8080-exec-5] INFO  c.e.w.controller.ItemController - All items retrieved from database and cached.
+2024-04-29 00:57:41 [http-nio-8080-exec-6] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:18:51 [main] INFO  c.e.warehouse.WarehouseApplication - Starting WarehouseApplication using Java 17 with PID 17676 (C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\warehouse)
+2024-04-29 01:18:51 [main] INFO  c.e.warehouse.WarehouseApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 01:18:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 01:18:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 01:18:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-04-29 01:18:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-29 01:18:53 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-04-29 01:18:53 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-04-29 01:18:53 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-04-29 01:18:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-29 01:18:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29 01:18:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-29 01:18:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2365 ms
+2024-04-29 01:18:54 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 29505cc7-7c53-4cf3-879b-aa8c1522d97c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 01:18:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f61de04, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f5a33ed, org.springframework.security.web.context.SecurityContextHolderFilter@3df04fa1, org.springframework.security.web.header.HeaderWriterFilter@2ec92631, org.springframework.web.filter.CorsFilter@5b59c3d, org.springframework.security.web.authentication.logout.LogoutFilter@30a62a5b, com.example.warehouse.filter.JwtAuthorizeFilter@25533bba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fdc2db6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5be69f7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69e36fe3, org.springframework.security.web.session.SessionManagementFilter@45849604, org.springframework.security.web.access.ExceptionTranslationFilter@22a63740, org.springframework.security.web.access.intercept.AuthorizationFilter@405603b6]
+2024-04-29 01:18:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-29 01:18:57 [main] INFO  c.e.warehouse.WarehouseApplication - Started WarehouseApplication in 6.758 seconds (process running for 7.202)
+2024-04-29 01:20:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 01:20:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-29 01:20:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-04-29 01:22:26 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 01:22:27 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13695c53
+2024-04-29 01:22:27 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 01:22:27 [http-nio-8080-exec-4] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 01:22:27 [http-nio-8080-exec-4] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 01:22:27 [http-nio-8080-exec-4] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 01:22:27 [http-nio-8080-exec-5] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:29:08 [http-nio-8080-exec-7] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 01:29:08 [http-nio-8080-exec-7] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 01:29:08 [http-nio-8080-exec-7] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 01:29:08 [http-nio-8080-exec-8] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:29:09 [http-nio-8080-exec-9] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 01:30:49 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 01:30:49 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 01:30:49 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 01:30:49 [http-nio-8080-exec-2] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:30:53 [http-nio-8080-exec-3] DEBUG c.e.w.m.ItemMapper.deleteItemById - ==>  Preparing: DELETE FROM Items WHERE id = ?
+2024-04-29 01:30:53 [http-nio-8080-exec-3] DEBUG c.e.w.m.ItemMapper.deleteItemById - ==> Parameters: 4(Integer)
+2024-04-29 01:30:53 [http-nio-8080-exec-3] DEBUG c.e.w.m.ItemMapper.deleteItemById - <==    Updates: 1
+2024-04-29 01:30:53 [http-nio-8080-exec-3] INFO  c.e.w.controller.ItemController - Deleting item for ID: 4 from caching
+2024-04-29 01:30:53 [http-nio-8080-exec-4] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==>  Preparing: SELECT * FROM Items
+2024-04-29 01:30:53 [http-nio-8080-exec-4] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==> Parameters: 
+2024-04-29 01:30:53 [http-nio-8080-exec-4] DEBUG c.e.w.mapper.ItemMapper.findAllItems - <==      Total: 12
+2024-04-29 01:30:53 [http-nio-8080-exec-4] INFO  c.e.w.controller.ItemController - All items retrieved from database and cached.
+2024-04-29 01:31:00 [http-nio-8080-exec-5] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 01:31:17 [http-nio-8080-exec-6] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:31:21 [http-nio-8080-exec-7] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 01:31:21 [http-nio-8080-exec-7] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user1(String)
+2024-04-29 01:31:21 [http-nio-8080-exec-7] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 01:31:21 [http-nio-8080-exec-8] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:31:37 [http-nio-8080-exec-9] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 01:31:37 [http-nio-8080-exec-9] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user1(String)
+2024-04-29 01:31:37 [http-nio-8080-exec-9] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 01:31:37 [http-nio-8080-exec-10] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 01:31:50 [http-nio-8080-exec-1] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:36:29 [main] INFO  c.e.warehouse.WarehouseApplication - Starting WarehouseApplication using Java 17 with PID 27752 (C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\warehouse)
+2024-04-29 15:36:29 [main] INFO  c.e.warehouse.WarehouseApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 15:36:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 15:36:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 15:36:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2024-04-29 15:36:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-29 15:36:33 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-04-29 15:36:33 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-04-29 15:36:33 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-04-29 15:36:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-29 15:36:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29 15:36:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-29 15:36:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3656 ms
+2024-04-29 15:36:34 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 51605e7b-fbf9-435f-b387-9c6226f3c752
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 15:36:35 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69e36fe3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48d31d25, org.springframework.security.web.context.SecurityContextHolderFilter@5be69f7e, org.springframework.security.web.header.HeaderWriterFilter@294ebe11, org.springframework.web.filter.CorsFilter@46188a89, org.springframework.security.web.authentication.logout.LogoutFilter@2168def, com.example.warehouse.filter.JwtAuthorizeFilter@76d0ecd7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16d61071, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18692e80, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f65a203, org.springframework.security.web.session.SessionManagementFilter@3df04fa1, org.springframework.security.web.access.ExceptionTranslationFilter@76220ef1, org.springframework.security.web.access.intercept.AuthorizationFilter@2f61de04]
+2024-04-29 15:36:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-29 15:36:36 [main] INFO  c.e.warehouse.WarehouseApplication - Started WarehouseApplication in 8.216 seconds (process running for 8.967)
+2024-04-29 15:37:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 15:37:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-29 15:37:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-04-29 15:37:55 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 15:37:55 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42cf6c88
+2024-04-29 15:37:55 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 15:37:55 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 15:37:55 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user1(String)
+2024-04-29 15:37:55 [http-nio-8080-exec-1] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 15:37:57 [http-nio-8080-exec-2] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==>  Preparing: SELECT * FROM Items
+2024-04-29 15:37:57 [http-nio-8080-exec-2] DEBUG c.e.w.mapper.ItemMapper.findAllItems - ==> Parameters: 
+2024-04-29 15:37:57 [http-nio-8080-exec-2] DEBUG c.e.w.mapper.ItemMapper.findAllItems - <==      Total: 12
+2024-04-29 15:37:57 [http-nio-8080-exec-2] INFO  c.e.w.controller.ItemController - All items retrieved from database and cached.
+2024-04-29 15:38:23 [http-nio-8080-exec-3] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:38:24 [http-nio-8080-exec-4] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:39:01 [http-nio-8080-exec-5] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 15:39:01 [http-nio-8080-exec-5] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user5(String)
+2024-04-29 15:39:01 [http-nio-8080-exec-5] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 1
+2024-04-29 15:39:02 [http-nio-8080-exec-6] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:39:03 [http-nio-8080-exec-7] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:39:04 [http-nio-8080-exec-8] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:46:39 [main] INFO  c.e.warehouse.WarehouseApplication - Starting WarehouseApplication using Java 17 with PID 22692 (C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\warehouse)
+2024-04-29 15:46:39 [main] INFO  c.e.warehouse.WarehouseApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 15:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 15:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 15:46:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+2024-04-29 15:46:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-29 15:46:43 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-04-29 15:46:43 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-04-29 15:46:43 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-04-29 15:46:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-29 15:46:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29 15:46:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-29 15:46:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3743 ms
+2024-04-29 15:46:44 [main] DEBUG c.e.w.filter.JwtAuthorizeFilter - Filter 'jwtAuthorizeFilter' configured for use
+2024-04-29 15:46:44 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3e22e940-a67d-455e-b3aa-30deede2de47
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 15:46:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37fca349, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@86377d5, org.springframework.security.web.context.SecurityContextHolderFilter@1e7cfd49, org.springframework.security.web.header.HeaderWriterFilter@5c25daad, org.springframework.web.filter.CorsFilter@87220f1, org.springframework.security.web.authentication.logout.LogoutFilter@5f5a33ed, com.example.warehouse.filter.JwtAuthorizeFilter@6826b70f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ca10069, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45e69324, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77998ea7, org.springframework.security.web.session.SessionManagementFilter@539ee811, org.springframework.security.web.access.ExceptionTranslationFilter@25823192, org.springframework.security.web.access.intercept.AuthorizationFilter@3cf06a01]
+2024-04-29 15:46:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-29 15:46:47 [main] INFO  c.e.warehouse.WarehouseApplication - Started WarehouseApplication in 8.797 seconds (process running for 9.511)
+2024-04-29 15:46:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 15:46:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-29 15:46:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-04-29 15:46:59 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 15:47:00 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b91ae61
+2024-04-29 15:47:00 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 15:47:01 [http-nio-8080-exec-3] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:47:03 [http-nio-8080-exec-4] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:47:04 [http-nio-8080-exec-5] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:47:06 [http-nio-8080-exec-6] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:47:07 [http-nio-8080-exec-7] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:52:43 [main] INFO  c.e.warehouse.WarehouseApplication - Starting WarehouseApplication using Java 17 with PID 22592 (C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\warehouse)
+2024-04-29 15:52:43 [main] INFO  c.e.warehouse.WarehouseApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 15:52:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 15:52:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 15:52:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
+2024-04-29 15:52:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-29 15:52:46 [main] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-04-29 15:52:46 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-04-29 15:52:46 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-04-29 15:52:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-29 15:52:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29 15:52:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-29 15:52:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3478 ms
+2024-04-29 15:52:47 [main] DEBUG c.e.w.filter.JwtAuthorizeFilter - Filter 'jwtAuthorizeFilter' configured for use
+2024-04-29 15:52:47 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fa96fdf7-6a65-4a3f-bd6a-0be65908ff9e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 15:52:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@87220f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77998ea7, org.springframework.security.web.context.SecurityContextHolderFilter@4641f66c, org.springframework.security.web.header.HeaderWriterFilter@6b64429e, org.springframework.web.filter.CorsFilter@252d8df6, org.springframework.security.web.authentication.logout.LogoutFilter@69e36fe3, com.example.warehouse.filter.JwtAuthorizeFilter@421ead7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a531637, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@539ee811, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36638b59, org.springframework.security.web.session.SessionManagementFilter@779b4f9c, org.springframework.security.web.access.ExceptionTranslationFilter@398694a6, org.springframework.security.web.access.intercept.AuthorizationFilter@68f2363]
+2024-04-29 15:52:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-29 15:52:51 [main] INFO  c.e.warehouse.WarehouseApplication - Started WarehouseApplication in 8.934 seconds (process running for 9.743)
+2024-04-29 15:52:59 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 15:52:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-29 15:52:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-04-29 15:53:01 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 15:53:01 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@726a7eed
+2024-04-29 15:53:01 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 15:53:03 [http-nio-8080-exec-3] INFO  c.e.w.i.RequestLoggingInterceptor - User user5 is making a request to /items
+2024-04-29 15:53:03 [http-nio-8080-exec-3] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:53:04 [http-nio-8080-exec-4] INFO  c.e.w.i.RequestLoggingInterceptor - User user5 is making a request to /items/3
+2024-04-29 15:53:04 [http-nio-8080-exec-4] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:53:05 [http-nio-8080-exec-5] INFO  c.e.w.i.RequestLoggingInterceptor - User user5 is making a request to /items
+2024-04-29 15:53:05 [http-nio-8080-exec-5] INFO  c.e.w.controller.ItemController - All items retrieved from cache.
+2024-04-29 15:53:06 [http-nio-8080-exec-6] INFO  c.e.w.i.RequestLoggingInterceptor - User user5 is making a request to /items/3
+2024-04-29 15:53:06 [http-nio-8080-exec-6] INFO  c.e.w.controller.ItemController - Retrieved from cache for ID: 3
+2024-04-29 15:53:08 [http-nio-8080-exec-7] INFO  c.e.w.i.RequestLoggingInterceptor - User user5 is making a request to /items
+2024-04-29 15:53:08 [http-nio-8080-exec-7] INFO  c.e.w.controller.ItemController - All items retrieved from cache.

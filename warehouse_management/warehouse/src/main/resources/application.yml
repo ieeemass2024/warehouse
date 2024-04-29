@@ -1,0 +1,70 @@
+server:
+  port: 8080
+
+spring:
+  security:
+    jwt:
+      key: "averyverylongkey"
+      expire: 1
+    filter:
+      order: -100
+    #数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 8
+      max-idle: 8
+      initial-size: 10
+    tomcat:
+      max-active: 20
+    #静态资源配置
+web:
+  resources:
+    static-locations: classpath:/static/
+  # Redis 连接信息
+cache:
+  type: redis
+data:
+  redis:
+    host: localhost
+    port: 6379
+
+
+mybatis:
+  type-aliases-package: com.example.warehouse.bean
+  mapper-locations: classpath:mapper/*.xml
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  level:
+    com:
+      example:
+        warehouse:
+          controller: debug
+          service: debug
+          # mapper: debug
+          interceptor: debug  # 确保拦截器也被设置为 debug 级别
+          filter: debug  # 确保过滤器也被设置为 debug 级别
+        #  mapper: debug
+
+  file:
+    name: logs/warehouse.log  # 指定日志文件的保存路径和文件名
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'  # 控制台输出的格式
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'  # 文件输出的格式
+# logging:
+#   level:
+#     root: WARN
+#     com.example.warehouse.service: DEBUG  # 调整为你的包名
+#   file:
+#     name: logs/warehouse.log  # 指定日志文件的保存路径和文件名
+#   pattern:
+#     console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'  # 控制台输出的格式
+#     file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'  # 文件输出的格式
+
+

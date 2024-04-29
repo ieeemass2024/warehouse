@@ -1,0 +1,42 @@
+2024-04-29 00:55:11 [main] INFO  c.e.w.controller.ItemControllerTest - Starting ItemControllerTest using Java 17 with PID 31452 (started by Lenovo in C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse)
+2024-04-29 00:55:11 [main] DEBUG c.e.w.controller.ItemControllerTest - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-04-29 00:55:11 [main] INFO  c.e.w.controller.ItemControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 00:55:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 00:55:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 00:55:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-04-29 00:55:14 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 40a7febc-7a13-4a2f-b74d-437875b1d667
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 00:55:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7296fe0b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a5066f5, org.springframework.security.web.context.SecurityContextHolderFilter@5bccaedb, org.springframework.security.web.header.HeaderWriterFilter@42066f0d, org.springframework.web.filter.CorsFilter@578d472a, org.springframework.security.web.authentication.logout.LogoutFilter@be1c08a, com.example.warehouse.filter.JwtAuthorizeFilter@1191029d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17ec5e2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52290e63, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54b2d002, org.springframework.security.web.session.SessionManagementFilter@608b906d, org.springframework.security.web.access.ExceptionTranslationFilter@5602e540, org.springframework.security.web.access.intercept.AuthorizationFilter@5abc5854]
+2024-04-29 00:55:17 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-04-29 00:55:17 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-04-29 00:55:17 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-04-29 00:55:17 [main] INFO  c.e.w.controller.ItemControllerTest - Started ItemControllerTest in 6.362 seconds (process running for 7.629)
+2024-04-29 00:55:58 [main] INFO  c.e.w.controller.UserControllerTest - Starting UserControllerTest using Java 17 with PID 15132 (started by Lenovo in C:\Users\Lenovo\Desktop\warehouse\warehouse_management\warehouse)
+2024-04-29 00:55:58 [main] DEBUG c.e.w.controller.UserControllerTest - Running with Spring Boot v3.2.5, Spring v6.1.6
+2024-04-29 00:55:58 [main] INFO  c.e.w.controller.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-04-29 00:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-29 00:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-29 00:55:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2024-04-29 00:56:00 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5fd56df9-86d9-4f48-ba33-6c74ce78997f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-04-29 00:56:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@773c7147, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5abc5854, org.springframework.security.web.context.SecurityContextHolderFilter@14ad42, org.springframework.security.web.header.HeaderWriterFilter@1468e880, org.springframework.web.filter.CorsFilter@5c3007d, org.springframework.security.web.authentication.logout.LogoutFilter@7f1ad846, com.example.warehouse.filter.JwtAuthorizeFilter@66b40dd3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@173cfb01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1762e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7296fe0b, org.springframework.security.web.session.SessionManagementFilter@1ac3a6f, org.springframework.security.web.access.ExceptionTranslationFilter@29b5e7db, org.springframework.security.web.access.intercept.AuthorizationFilter@5e7e7a7e]
+2024-04-29 00:56:03 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-04-29 00:56:03 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-04-29 00:56:03 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+2024-04-29 00:56:03 [main] INFO  c.e.w.controller.UserControllerTest - Started UserControllerTest in 6.066 seconds (process running for 7.217)
+2024-04-29 00:56:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-29 00:56:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1de398c3
+2024-04-29 00:56:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-29 00:56:05 [main] DEBUG c.e.w.m.U.findUserByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2024-04-29 00:56:05 [main] DEBUG c.e.w.m.U.findUserByUsername - ==> Parameters: user2(String)
+2024-04-29 00:56:05 [main] DEBUG c.e.w.m.U.findUserByUsername - <==      Total: 0
+2024-04-29 00:56:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-29 00:56:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
