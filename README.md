@@ -368,56 +368,56 @@ UserHandlerTest：测试用例全部通过
 #### 4.1 管理员
 
 **（1）管理员登录：**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/5538fd36-7fed-4d1e-873a-be6f2abf46ef)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/14af909e-da21-4d7f-8805-693209b99784)
 
 **（2）管理员界面：（可以进行增删改）**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/5de29158-244b-41b5-ada8-9bb21ed82b6f)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/5ed97b2f-8e2e-4514-947e-15e707bd2fbe)
 
 **（3）增加商品：**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/8bf4aca5-4f16-47d6-b2ea-67cfb1b475a0)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/f320ff55-5cea-43fb-8ddf-22136e2a1c07)
 
 **（4）查看单个信息：**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/33b6d281-0913-4043-9cd5-031fe9af5a22)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/bcbd3ff7-2a06-4412-a6d7-fd4525e5742c)
 
 **（5）更改单个信息：**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/12c73b24-6c32-44a2-94f2-d2c2ea070087)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/fefd13a6-4045-45f5-bfa0-c1f02fe95632)
 
 #### 4.2 普通用户
 
 **（1）普通用户登录：**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/ab92d900-5540-4732-b6ab-daa9ca50cf88)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/cf1ef3f8-4e36-46d1-a490-5afc85d1eefe)
 
 **（2）只能查看信息：**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/bb226a55-65b4-4158-9131-8915ffae46a8)
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/f197e9ab-241f-4d66-a3dc-7145a40f65e3)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/d60edcbb-2fb8-42fa-97bd-e6ee4207e4ae)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/0911ebe6-17ee-48f8-99a4-eae09d533ad2)
 
 #### 4.3 会话控制
 
 当用户在设定的token有效期内没有操作时，系统会提示用户重新登录（会话过期）
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/74f0b330-cda2-478d-9f09-a321aa0d8578)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/5943a21c-01bb-4b90-b867-e12ad75d7713)
 
 #### 4.4 日志
 
 系统设置了Log来记录对数据的操作，将所有信息输出到控制台中同时保存到log日志文件内包括：访问时间，对访问接口的记录，登陆用户的信息、权限记录，访问接口的返回结果
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/e6a493f9-f2e0-479e-8fea-71e5149d3339)
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/8b54549c-924a-43a6-a965-9d494c611794)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/5e26f791-ff2d-4242-b2f9-1cc15b11f1ac)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/90679db9-4696-4e6a-9884-4e40c06ec84c)
 
 #### 4.5 缓存
 
 当用户首次登录时，会从数据库中获取所有物品信息，并将allItems存在缓存中；当查看某一物品信息时，会将该物品的查看信息(item:id)存在缓存；当删除某一物品信息时，会删除缓存中的allItems和其对应的item:id；当创建物品时，会删除缓存中的allItems并讲该物品信息(item:id)存在缓存；当更新某一物品信息时，会删除allItems同时更新缓存中对应的的item:id；当用户切换账号登录时，缓存内容会被清空
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/91147350-b396-4619-8508-706100914337)
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/b506fe5a-0c55-42b5-a8ed-3fb6333a218e)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/01365c56-76fb-499b-96e5-c38766d8acad)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/8f1225e6-47f1-4c94-a6d0-f249bafe9c2b)
 
 #### 4.6 速率限制
 
 使用拦截器并利用Bucket4j库实现速率限制，当对某一接口的请求超过一定次数时，会限制访问
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/209bb64f-da4f-4ae8-b6e6-4e1f28395d73)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/06947678-fffa-4718-a68f-79ae2935a7fc)
 
 #### 4.7 OpenAPI文档
 
 **（1） Item API**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/68785b4b-6530-44aa-8af8-3b5eeef73c3b)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/d2702b90-2514-4282-836d-8d5c22270a28)
 
 **（2） User API**
-![Uploading image.png…]()
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/de28ecc7-1c32-4604-b887-b11dc2bb87d4)
 
