@@ -356,10 +356,8 @@ UserHandlerTest：测试用例全部通过
 ![image](https://github.com/ieeemass2024/warehouse/assets/108800596/84a8f4d0-e54e-4f40-90ac-1be9012e61ae)
 
 **(8) 测试速率限制**
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/8203fedd-8242-4f5c-b56b-62546c50ff40)
-
 当请求超过一定次数时，会限制访问
-![image](https://github.com/ieeemass2024/warehouse/assets/108800596/3ac3ebd5-72a6-43fb-81f4-ed88eda8d7e4)
+![image](https://github.com/ieeemass2024/warehouse/assets/108800596/8203fedd-8242-4f5c-b56b-62546c50ff40)
 
 ---
 
