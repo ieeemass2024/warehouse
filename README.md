@@ -9,8 +9,8 @@
     1. 用例图
     2. 接口设计
         - 默认环境
-        - UserHandler
-        - ItemHandler
+        - UserController
+        - ItemController
     3. 数据库设计
 3. 测试截图
     1. JUnit 
@@ -25,7 +25,6 @@
     - 缓存
     - 速率限制
     - OpenAPI文档
-    - Spring WebFlux API 实现
 
 ---
 
@@ -68,7 +67,7 @@
 |-------|--------|
 | baseUrl | http://localhost:8080 |
 
-##### 2.2.1 UserHandler
+##### 2.2.1 UserController
 
 1. 获取所有用户
 
@@ -175,7 +174,7 @@
     | msg      | string  |     | FALSE |      |
     | statusCode | int32 | 200 | FALSE | the http code 200、404 and so on |
 
-##### 2.2.2 ItemHandler
+##### 2.2.2 ItemController
 
 1. 获取所有商品
 
@@ -194,9 +193,7 @@
     | 参数名称 | 类型 | 默认值 | 不为空 | 描述 |
     |----------|------|---------|---------|------|
     | data     | object |     | FALSE |      |
-    | flag     | boolean |     |
-
- FALSE |      |
+    | flag     | boolean |     |FALSE |      |
     | msg      | string  |     | FALSE |      |
     | statusCode | int32 | 200 | FALSE | the http code 200、404 and so on |
 
