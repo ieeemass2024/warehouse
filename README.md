@@ -1,6 +1,6 @@
-# Assignment 2
+# Assignment 1
 
-## Restful API development with Spring Webflux
+## Restful API development with Spring boot and Spring MVC
 
 ### 目录
 
@@ -13,7 +13,7 @@
         - ItemHandler
     3. 数据库设计
 3. 测试截图
-    1. JUnit WebTestClient
+    1. JUnit 
         - 单元测试
         - 集成测试
     2. Postman
@@ -33,12 +33,12 @@
 
 **Basic Requirements:**
 
-- Follow the Restful APIs defined in Assignment 1.
-- Implement the API in Java with Spring WebFlux API.
-- Implement the reactive service layer and dao layer.
-- Testing with boot testing framework and WebClient/WebTestClient API.
-- API authentication using spring security and JWT will be given credit.
-- Using functional api instead of annotation will be given credit.
+-	Define and document a set of Restful APIs which can either be in Json or OpenAPI doc.
+-	Implement the API in Java with Spring MVC and boot.
+-	Implement the data repository layer with at least RDBMS.
+-	Testing with boot testing framework and Web API testing.
+-	API authentication and if necessary additional web UIs.
+
 
 **Credit Implementations:**
 
@@ -47,19 +47,11 @@
 - Log
 - Rate Limiting
 
-本次作业我们采用Java语言结合Spring WebFlux和Spring Boot框架，确保系统高效运行和易于维护。响应式编程的引入提高了系统的并发处理能力，增强了系统的扩展性和可靠性。
+本次作业上述基本要求和额外要求均已完成。
+本次作业采用前后端分离技术，前端使用Vue技术，后端使用Spring技术，目标是设计并实现一套基于RESTful架构的API，通过OpenAPI文档进行定义和记录。
+我们使用Java语言配合Spring MVC和Spring Boot框架完成了API的开发，确保了系统的高效运行和易于维护。数据仓库层面，我们选择了关系型数据库管理系统（MySQL）来存储和管理数据。在测试方面，我们利用Spring Boot的测试框架和Web API进行了全面的测试，具体使用Spring Boot的测试框架JUnit进行单元测试和集成测试，Web API测试使用Postman进行调试，确保了API的可靠性和稳定性。对于API authentication部分，我们通过使用Spring Security的鉴权功能，使普通用户（USER）和管理员（ADMIN）登录后进入不同界面，API的安全性通过认证机制得到了加强。我们通过Vue添加了额外的Web界面来提供更多的交互功能。
+此外，为了提升系统性能和用户体验，结合上课所学内容，我们还增加了一些高级功能，如使用Redis进行数据缓存，提高了系统性能；使用JSON Web Token（JWT）实现会话控制功能，包括认证身份令牌、会话过期验证等；增加日志功能，使用SLF4J（Simple Logging Facade for Java）对系统内数据的增删改查等一切操作进行记录，并且在filter内获取token内含有的用户id信息（username）进行session id的认证，实现用户级的信息监控，在控制台输出操作信息并存储到本地文件夹；增加每个用户对API的访问频率限制，使用 Bucket4j 库实现的速率限制（Rate Limiting）拦截器，用于本系统的应用中。这些额外功能实现不仅提高了API的响应速度和并发处理能力，也增强了系统的安全性和可监控性，同时也加深了我们对课上所学知识的理解。
 
-在数据仓库层面，我们选择了MySQL关系型数据库管理系统来存储和管理数据，通过Spring Data R2DBC实现数据访问的响应式编程，保证了数据操作的高效性。
-
-在实现过程中，我们严格遵循了响应式编程的原则：
-- 在响应式服务层上：服务层负责处理业务逻辑，并调用数据访问层进行数据存取操作。我们使用Spring WebFlux框架实现了响应式服务层，确保在处理高并发请求时，系统能够保持高效运行。
-- 在响应式数据访问层上：数据访问层使用Spring Data R2DBC和ReactiveCrudRepository接口，提供对数据库的响应式访问。通过这种方式，数据访问操作能够在非阻塞的情况下执行，进一步提高了系统的性能。
-
-在测试方面，我们利用Spring Boot的测试框架（JUnit）进行了全面的单元测试和集成测试，并使用WebTestClient API进行了Web API的自动化测试。通过这些测试，我们确保了API的可靠性和稳定性。此外，我们还使用Postman对API进行了调试和验证。
-
-对于API认证与安全，我们使用Spring Security和JWT进行用户鉴权。用户通过登录获得JWT令牌，系统根据用户角色（USER或ADMIN）控制其权限，确保API的安全性和可靠性。
-
-此外，为了提升系统性能和用户体验，结合上课所学内容，我们还增加了一些高级功能，如使用Redis进行数据缓存，提高了系统性能；使用JSON Web Token（JWT）实现会话控制功能，包括认证身份令牌、会话过期验证等；增加日志功能，使用SLF4J（Simple Logging Facade for Java）对系统内数据的增删改查等一切操作进行记录，在控制台输出操作信息并存储到本地文件夹；增加每个用户对API的访问频率限制，使用 Bucket4j 库实现的速率限制（Rate Limiting）拦截器，用于本系统的应用中。这些额外功能实现不仅提高了API的响应速度和并发处理能力，也增强了系统的安全性和可监控性，同时也加深了我们对课上所学知识的理解。
 
 ### 2. 系统整体设计
 
@@ -304,7 +296,7 @@
 
 ### 3. 测试截图
 
-#### 3.1 JUnit WebTestClient
+#### 3.1 JUnit
 
 **3.1.1 单元测试**
 
@@ -429,8 +421,3 @@ UserHandlerTest：测试用例全部通过
 **（2） User API**
 ![Uploading image.png…]()
 
-- JwtUtils 用于生成和验证JWT令牌
-
----
-
-希望这能帮到你。如果你有任何问题，请随时告诉我。
